@@ -479,12 +479,12 @@ if __name__ == "__main__":
     parser.add_argument('--larger-font', default=False, action='store_true')
     args = parser.parse_args()
 
-    if not sys.platform.startswith('win'):
-        print("Unsupported Platform. This application is tested on Windows Only")
-        if args.ignore_platform:
-            print("The application will continue to run but may crash or not function as intended")
-        else:
-            exit(1)
+   # if not sys.platform.startswith('win'):
+       # print("Unsupported Platform. This application is tested on Windows Only")
+       # if args.ignore_platform:
+        #    print("The application will continue to run but may crash or not function as intended")
+       # else:
+          #  exit(1)
     
     app = QApplication(sys.argv)
 
